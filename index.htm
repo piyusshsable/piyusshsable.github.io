@@ -153,8 +153,12 @@
 	<div class="navbar navbar-default navbar-static-bottom footer">
 		<div class="container">
 			<p class="navbar-text pull-left">@alchemy 2014</p>
-			<a href="#" class="navbar-btn btn btn-info pull-right">Subscribe</a>
 			<div id="fb-root"></div>
+			<!--  Below we include the Login Button social plugin. This button uses the JavaScript SDK to
+			  present a graphical Login button that triggers the FB.login() function when clicked. -->
+			
+			<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+			<a href="#" class="navbar-btn btn btn-info pull-right">Subscribe</a>
 		</div>
 	</div>
 	<!-- Page Footer End-->
@@ -269,12 +273,7 @@
 	    });
 	  }
 	</script>
-	
-	<!--
-	  Below we include the Login Button social plugin. This button uses the JavaScript SDK to
-	  present a graphical Login button that triggers the FB.login() function when clicked. -->
-	
-	<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
+
 	<!-- End Facebook Login Script-->
 	</body>
 </html>
